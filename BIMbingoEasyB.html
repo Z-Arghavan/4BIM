@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>LifeCycle Stage in the Supply Chain</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css">
+    <link rel="stylesheet" href="BIMbingoEasyB.css">
+    <script src="BIMbingoEasyA.js" defer></script>
+</head>
+
+<body>
+    <header class="main-header">
+        <h1>Life Cycle and Supply Chain</h1>
+        <div class="header-controls">
+            <div id="timer" class="timer">00:00</div>
+            <button id="restartButton" class="restart-button">Restart Game</button>
+        </div>
+    </header>
+
+    <div class="instruction-section-drag">
+        <div class="dragIt">
+            <h5> Oops! There is an issue in your IFC file! Your colleague is going to send back some comments to you! <br> <strong>Which openBIM standard is the right one to use for model-based communication?</strong></h5>
+        </div>
+    </div>
+
+    <!-- Draggable items and descriptions -->
+    <section class="draggable-elements">
+        <img src="images/IFC.PNG" class="IFC draggable" draggable="true" id="IFC" alt="IFC" />
+        <img src="images/IDS.PNG" draggable="true" id="IDS" class="IDS draggable" alt="IDS" />
+        <img src="images/BCF.PNG" draggable="true" id="BCF" class="BCF draggable" alt="BCF" />
+    </section>
+
+    <!-- Descriptions moved below draggable elements -->
+    <div class="text-section">
+        <div class="product-stage">
+            <h3>IFC: Industry Foundation Classes</h3>
+            <p>Description placeholder</p>
+
+        </div>
+        <div class="construction-stage">
+            <h3>IDS: Information Delivery Specification</h3>
+            <p>Description placeholder</p>
+
+        </div>
+        <div class="use-stage">
+            <h3>BCF: BIM Format Collaboration</h3>
+            <p>Description placeholder</p>
+
+        </div>
+    </div>
+
+    <!-- Game container with droppable squares -->
+    <div class="game-container">
+        <section class="droppable-elements">
+            <div class="droppable" data-draggable-id="BCF"><span>?</span></div>
+        </section>
+    </div>
+
+    <div id="completionContainer" style="display: none;">
+        <button id="nextStepButton" onclick="goToNextGame()">Correct! Next Step</button>
+    </div>
+
+    <footer>
+        © TU/e 2024
+    </footer>
+
+    <script src="BIMbingoEasyEndGame.html"></script>
+</body>
+</html>
