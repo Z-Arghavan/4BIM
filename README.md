@@ -1,6 +1,6 @@
 # A short experiment on BIM education (unfinished project)
 
-This is a **short and experimental mini-game** designed for *(open)BIM education*.  
+This is a short and experimental mini-game designed for (open)BIM education.  
 Players must choose wisely between:
 - IFC: Industry Foundation Classes
 - BCF: BIM Collaboration Format
